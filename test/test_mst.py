@@ -9,21 +9,20 @@ def check_mst(adj_mat: np.ndarray,
               mst: np.ndarray, 
               expected_weight: int, 
               allowed_error: float = 0.0001):
-    """ Helper function to check the correctness of the adjacency matrix encoding an MST.
-        Note that because the MST of a graph is not guaranteed to be unique, we cannot 
-        simply check for equality against a known MST of a graph. 
+    """ 
+    
+    Helper function to check the correctness of the adjacency matrix encoding an MST.
+    Note that because the MST of a graph is not guaranteed to be unique, we cannot 
+    simply check for equality against a known MST of a graph. 
 
-        Arguments:
-            adj_mat: Adjacency matrix of full graph
-            mst: Adjacency matrix of proposed minimum spanning tree
-            expected_weight: weight of the minimum spanning tree of the full graph
-            allowed_error: Allowed difference between proposed MST weight and `expected_weight`
+    Arguments:
+        adj_mat: Adjacency matrix of full graph
+        mst: Adjacency matrix of proposed minimum spanning tree
+        expected_weight: weight of the minimum spanning tree of the full graph
+        allowed_error: Allowed difference between proposed MST weight and `expected_weight`
 
-        TODO: 
-            Add additional assertions to ensure the correctness of your MST implementation
-        For example, how many edges should a minimum spanning tree have? Are minimum spanning trees
-        always connected? What else can you think of?
     """
+
     def approx_equal(a, b):
         return abs(a - b) < allowed_error
 
@@ -32,6 +31,13 @@ def check_mst(adj_mat: np.ndarray,
         for j in range(i+1):
             total += mst[i, j]
     assert approx_equal(total, expected_weight), 'Proposed MST has incorrect expected weight'
+
+    ### ADDITIONAL ASSERTIONS ###
+
+    assert np.count_nonzero(mst) // 2 == len(adj_mat) - 1, "A MST should have one less edge than the number of vertices."
+    assert np.allclose(mst, mst.T), "The adjacency matrix should be symmetric."
+    assert total <= adj_mat.flatten().sum() / 2, "The total weight of the MST should be lower than the original graph."
+    assert np.allclose(mst, mst[np.any(mst, axis = 1)]), "Each vertex should have at least one edge connecting it."
 
 
 def test_mst_small():

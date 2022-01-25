@@ -11,7 +11,7 @@ The purpose of this assignment is to implement Prim's algorithm, a non-trivial g
 
 ## Software Development Assessment
 
-* [TODO] Add more assertions to the `check_mst` function in test/test_mst.py 
+* ~~Add more assertions to the `check_mst` function in test/test_mst.py~~
 * [TODO] Write at least one more unit test (in the test_mst.py file) for your construct_mst implementation
 * Two unit tests have already been provided. 
     * The first is a small graph of four nodes
