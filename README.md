@@ -7,8 +7,7 @@ The purpose of this assignment is to implement Prim's algorithm, a non-trivial g
 # Assignment Tasks
 
 ## Coding Assessment
-* [TODO] Complete the `Graph.construct_mst` method found in the mst/graph.py 
-	* All necessary modules have already been imported. We encourage you to not rely on any other dependencies (e.g. networkx). 
+* ~~Complete the `Graph.construct_mst` method found in the mst/graph.py~~
 
 ## Software Development Assessment
 
