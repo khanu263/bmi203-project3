@@ -12,11 +12,7 @@ The purpose of this assignment is to implement Prim's algorithm, a non-trivial g
 ## Software Development Assessment
 
 * ~~Add more assertions to the `check_mst` function in test/test_mst.py~~
-* [TODO] Write at least one more unit test (in the test_mst.py file) for your construct_mst implementation
-* Two unit tests have already been provided. 
-    * The first is a small graph of four nodes
-    * The second is a larger graph of 140 single cells, projected onto a lower dimensional subspace
-	
+* ~~Write at least one more unit test (in the test_mst.py file) for your construct_mst implementation~~
 * Automate Testing with [Github Actions](https://docs.github.com/en/actions)
 
 	See blogposts below on helping set up Github actions with pytest:

@@ -64,5 +64,8 @@ def test_mst_single_cell_data():
 
 
 def test_mst_student():
-    """ TODO: Write at least one unit test for MST construction """
-    pass
+    """ Test a complete graph I made with a known MST weight """
+    file_path = './data/small2.csv'
+    g = Graph(file_path)
+    g.construct_mst()
+    check_mst(g.adj_mat, g.mst, 9)
