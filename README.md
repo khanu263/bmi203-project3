@@ -1,5 +1,6 @@
-# Project 3
-Minimum Spanning Trees
+# bmi203-project3
+
+![Unit test status](https://github.com/khanu263/bmi203-project3/workflows/Unit%20tests/badge.svg)
 
 # Assignment Overview
 The purpose of this assignment is to implement Prim's algorithm, a non-trivial greedy algorithm used to construct minimum spanning trees. 
@@ -13,17 +14,7 @@ The purpose of this assignment is to implement Prim's algorithm, a non-trivial g
 
 * ~~Add more assertions to the `check_mst` function in test/test_mst.py~~
 * ~~Write at least one more unit test (in the test_mst.py file) for your construct_mst implementation~~
-* Automate Testing with [Github Actions](https://docs.github.com/en/actions)
-
-	See blogposts below on helping set up Github actions with pytest:
-	
-	* [post 1](https://blog.dennisokeeffe.com/blog/2021-08-08-pytest-with-github-actions)
-	* [post 2](https://mattsegal.dev/pytest-on-github-actions.html)
-	* Add "! [BuildStatus] (https://github.com/ < your-github-username > /Project3/workflows/Project3/badge.svg?event=push)" (update link and remove spaces) to the beginning of your README file
-	* Also refer to previous assignment for more in-depth help with GitHub actions
-
-	Ensure that the Github actions complete the following:
-	* runs pytest
+* ~~Automate testing with [Github Actions](https://docs.github.com/en/actions)~~
 
 # Getting Started
 To get started you will need to fork this repository onto your own Github account. Work on the codebase from your own repo and commit changes. 
